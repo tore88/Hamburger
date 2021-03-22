@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+html,
+body {
+  width: auto;
+  height: 100vh;
+}

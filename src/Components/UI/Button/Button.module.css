@@ -1,0 +1,27 @@
+.Button {
+  margin: 10px;
+  width: 8rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgb(105, 131, 248);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+}
+.Button:hover {
+  background-color: whitesmoke;
+  color: black;
+  transform: scale(1.1);
+}
+.Button:disabled {
+  cursor: not-allowed;
+  background-color: rgb(165, 165, 165);
+  transform: none;
+  color: black;
+  width: 7rem;
+  opacity: 0.5;
+}

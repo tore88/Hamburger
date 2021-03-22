@@ -1,0 +1,39 @@
+.Modal {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50;
+  height: 350px;
+  background-color: blanchedalmond;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+  text-align: center;
+  z-index: 20;
+  transition: all 0.3s ease-out;
+  animation-name: slowaperas;
+  animation-duration: 2s;
+}
+Button {
+  margin: 10px;
+}
+@media screen and (max-width: 480px) {
+  .Modal {
+    top: 20%;
+    height: 500px;
+  }
+}
+@keyframes slowaperas {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}

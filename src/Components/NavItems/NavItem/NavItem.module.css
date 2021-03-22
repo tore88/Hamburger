@@ -1,0 +1,6 @@
+.NavItem a {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(47, 123, 236);
+  padding-bottom: 5px;
+}

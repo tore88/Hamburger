@@ -1,0 +1,11 @@
+.HambContainer {
+  display: block;
+  margin-right: 1rem;
+}
+
+.HambLine {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(47, 123, 236);
+  margin: 7px;
+}

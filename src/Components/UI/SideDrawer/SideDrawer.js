@@ -7,7 +7,7 @@ const SideDrawer = (props) => {
   return (
     <div className={Styles.SideDrawer}>
       {props.children}
-      <HambMenu onClick={props.clicked} />
+      <HambMenu onClick={props.click} />
     </div>
   );
 };

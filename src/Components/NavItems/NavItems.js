@@ -8,22 +8,17 @@ import SideDrawer from "../UI/SideDrawer/SideDrawer";
 
 import BackDrop from "../UI/BackDrop/BackDrop";
 
-let doesShow = false;
+// let doesShow = false;
+let ifShow = null;
 class NavItems extends Component {
   state = {
-    doesShow: false,
+    doesShow: true,
   };
 
   sideMenuShow = () => {
-    doesShow = this.state.doesShow;
+    ifShow = this.state.doesShow;
 
-    this.setState((prevState, props) => {
-      return {
-        doesShow: !prevState.doesShow,
-      };
-    });
-    console.log(doesShow);
-    return doesShow;
+    this.setState({ doesShow: !ifShow });
   };
 
   render() {
@@ -33,10 +28,10 @@ class NavItems extends Component {
           <div className={Styles.MobileOnly}>
             <HambMenu clicked={this.sideMenuShow} />
           </div>
-          {doesShow ? (
+          {ifShow ? (
             <div>
-              <SideDrawer clicked={this.sideMenuShow} />
-              <BackDrop clicked={() => this.sideMenuShow} />
+              <SideDrawer click={this.sideMenuShow} />
+              <BackDrop click={this.sideMenuShow} />
             </div>
           ) : null}
           <Logo />

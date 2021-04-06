@@ -13,6 +13,7 @@ const buildControls = (props) => {
 
   return (
     <div className={Styles.BuildControls}>
+      {/* tofixed2  */}
       <p>Price:{props.price.toFixed(2)} £</p>
       {ingredients.map((el) => {
         return (

@@ -8,8 +8,7 @@ import SideDrawer from "../UI/SideDrawer/SideDrawer";
 
 import BackDrop from "../UI/BackDrop/BackDrop";
 
-// let doesShow = false;
-let ifShow = null;
+let ifShow = false;
 class NavItems extends Component {
   state = {
     doesShow: true,
@@ -17,7 +16,6 @@ class NavItems extends Component {
 
   sideMenuShow = () => {
     ifShow = this.state.doesShow;
-
     this.setState({ doesShow: !ifShow });
   };
 

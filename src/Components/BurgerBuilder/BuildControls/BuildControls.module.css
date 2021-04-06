@@ -11,3 +11,6 @@
   position: fixed;
   bottom: 0;
 }
+Button {
+  border-radius: 10px;
+}
